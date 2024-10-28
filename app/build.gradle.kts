@@ -73,6 +73,7 @@ dependencies {
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.bundles.koin)
     implementation(libs.bundles.ktor)
+    implementation(libs.lottie.compose)
 
 
 }
