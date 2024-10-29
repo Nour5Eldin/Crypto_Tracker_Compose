@@ -8,11 +8,14 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
@@ -24,24 +27,28 @@ import com.noureldin.cryptotrackercompose.R
 import com.noureldin.cryptotrackercompose.crypto.presentation.coin_list.components.CoinListItem
 import com.noureldin.cryptotrackercompose.crypto.presentation.coin_list.components.previewCoin
 import com.noureldin.cryptotrackercompose.ui.theme.CryptoTrackerComposeTheme
+import kotlinx.coroutines.delay
 
 @Composable
 fun CoinListScreen(
     modifier: Modifier = Modifier,
     state: CoinListState
 ) {
-    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.crypto))
-    if (state.isLoading){
+    var showList by remember { mutableStateOf(false) }
+    LaunchedEffect(state.isLoading) {
+        delay(3000)
+        showList = true
+    }
+    if (state.isLoading && !showList){
+        val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.cryptoloading))
         Box (
             modifier= modifier
                 .fillMaxSize(),
             contentAlignment = Alignment.Center
         ){
             LottieAnimation(
-                modifier = Modifier.size(65.dp),
+                modifier = Modifier.size(265.dp),
                 composition= composition)
-            //Loading
-            CircularProgressIndicator()
         }
     } else {
         LazyColumn (
