@@ -32,6 +32,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun CoinListScreen(
     modifier: Modifier = Modifier,
+    onAction: (CoinListAction) -> Unit,
     state: CoinListState
 ) {
     var showList by remember { mutableStateOf(false) }
@@ -58,7 +59,7 @@ fun CoinListScreen(
         ){
             items(state.coins){ coinUi ->
                 CoinListItem(coinUi = coinUi,
-                    onClick = {},
+                    onClick = {onAction(CoinListAction.OnCoinClick(coinUi))},
                     modifier = Modifier.fillMaxWidth()
                 )
                 HorizontalDivider()
@@ -78,7 +79,8 @@ private fun CoinListScreenPreview() {
                 previewCoin.copy(id = it.toString())
             }
         ),
-            modifier = Modifier.background(MaterialTheme.colorScheme.background)
+            modifier = Modifier.background(MaterialTheme.colorScheme.background),
+            onAction = {}
         )
     }
     
