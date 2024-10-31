@@ -3,7 +3,7 @@ package com.noureldin.cryptotrackercompose.crypto.presentation.coin_detail
 import java.text.NumberFormat
 import java.util.Locale
 
-data class ValueLable(
+data class ValueLabel(
     val value: Float,
     val unit: String
 ){
