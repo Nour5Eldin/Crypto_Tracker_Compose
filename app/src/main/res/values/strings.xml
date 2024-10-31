@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CryptoTrackerCompose</string>
+    <string name="app_name">CryptoTracker</string>
     <string name="error_request_timeout">The request Timeout.</string>
     <string name="error_too_many_requests">!Oops, it seems like your quota is exced</string>
     <string name="error_no_internet">Couldn\'t Connect to server, Please check your internet connection..</string>
