@@ -21,10 +21,6 @@ A modern Android application built with Jetpack Compose that allows users to tra
   - [Observing Data](#observing-data)
   - [Data Sources](#data-sources)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Monetization Strategies](#monetization-strategies)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
