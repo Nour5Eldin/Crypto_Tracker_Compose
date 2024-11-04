@@ -98,3 +98,10 @@ The app follows a clean architecture pattern, which promotes separation of conce
 1. Clone the repository:
    ```bash
    git clone https://github.com/YourUsername/Crypto-Tracker-Compose.git
+
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
