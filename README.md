@@ -25,11 +25,11 @@ A modern Android application built with Jetpack Compose that allows users to tra
 
 ## Features
 
-- Real-time cryptocurrency price tracking.
-- Detailed information for each cryptocurrency.
-- User-friendly interface built with Jetpack Compose.
-- Interactive charts for historical price data.
-- Favorite coins management for quick access.
+- ✅ Real-time cryptocurrency price tracking.
+- ✅ Detailed info for each cryptocurrency.
+- ✅ A user-friendly interface powered by Jetpack Compose.
+- ✅ Interactive charts to explore historical price data.
+- ✅ Favorites management for quick access to top coins.
 
 ## Technologies Used
 
