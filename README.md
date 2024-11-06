@@ -4,7 +4,7 @@ A modern Android application built with Jetpack Compose that allows users to tra
 
 # :camera_flash: **Screenshots** :camera_flash:
 
-| Coin List  Screen                                   | Coin Detail  Screen                                     |
+| Coin List  Screen                                   | Coin Detail  Screen                                   |
 |-----------------------------------------------------|-------------------------------------------------------|
 | <img width="160" src="./assets/CoinListScreen.gif"> | <img width="160" src="./assets/CoinDetailScreen.gif"> |
 
