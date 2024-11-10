@@ -1,6 +1,7 @@
-# Crypto Tracker Compose
+# Crypto Tracker Compose Ui
 
 A modern Android application built with Jetpack Compose that allows users to track cryptocurrency prices, view historical data, and manage their favorite coins.
+The Best Practice Guide to Android Architecture Course.
 
 # :camera_flash: **Screenshots** :camera_flash:
 
